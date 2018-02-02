@@ -109,11 +109,15 @@
 	/*  4. VIDEO POPUP
 	/* ----------------------------------------------------------- */
 
+	var vid = document.getElementById("video"); 
    $('.mu-video-play-btn').on('click', function(event) {
 	   
+		 
         event.preventDefault();
         
-        $('.mu-video-iframe-area').addClass('mu-video-iframe-display');
+        $('.mu-video-area').removeClass('hidden');
+				$('.mu-video-area-overlay').addClass('hidden');
+				vid.play(); 
        
     });
    
